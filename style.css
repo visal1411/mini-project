@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+body {
+    color: #fff;
+    background: #000;
+}
+
+
+
+
+main {
+    min-height: 100vh;
+    background-image: url('download.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-btn, #restart-btn {
+    background-color: #080c09;
+    color: rgb(250, 246, 246);
+    font-style: oblique;
+    font-size: larger;
+}
+
+#start-btn:hover, #restart-btn:hover {
+    background-color: #d3d6da;
+}
+
+.answer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 640px;
+    margin: auto;
+   
+}
+
+.answer-btn {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.answer-1, .answer-3{
+    transform: translateX(-100px);
+}
+.answer-3, .answer-4{
+    transform: translateX(-100px);
+}
+.answer-2{
+    transform: translateX(26px);
+}
+.answer-4{
+    transform: translateX(27px);
+}
+
+
+.answer-1 {
+    background-color: #ff6666;
+    
+}
+
+.answer-2 {
+    background-color: #66b3ff; 
+}
+
+.answer-3 {
+    background-color: #66ff66; 
+}
+
+.answer-4 {
+    background-color: #ffcc66; 
+}
+
+#next-btn {
+    background-color: #f1eaea;
+    color: rgb(11, 11, 11);
+    box-sizing: border-box;
+    size: 0.5cm;
+    transform: translateX(-30px);
+}
+
+#next-btn:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+
+}
+
+.container.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+   
+    text-align: center;
+    font-size: xx-large;
+}
+
+.quiz-game{
+    transform: translateX(-25px);
+}
+#question{
+    transform: translateX(-25px);
+}
